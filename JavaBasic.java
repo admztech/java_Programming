@@ -5,10 +5,20 @@ public class JavaBasic {
 
         Scanner scr = new Scanner(System.in);
 
-        float a = 25.12f;
-        int b = (int) a;
-        System.out.println(b);
+        /*
+         * that is conside the narrowing convertion from float to long
+         * // int a = 10;
+         * // float b = 25.25f;
+         * // long c = 25;
+         * // long d = a + b + c;
+         * // System.out.println(d);
+         */
 
+        // short a = 5;
+        // byte b = 25;
+        // char c = 'c';
+        // byte bt = a + b + c;
+        // System.err.println(bt);
         /*
          * The are of the circle 2Pi(r*r)
          * float rad = scr.nextFloat();
