@@ -5,6 +5,10 @@ public class JavaBasic {
 
         Scanner scr = new Scanner(System.in);
 
+        int a = 10;
+        double b = 10.0000000000001;
+        System.out.println(a == b);
+
         /*
          * that is conside the narrowing convertion from float to long
          * // int a = 10;
