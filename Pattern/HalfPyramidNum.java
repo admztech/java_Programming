@@ -10,6 +10,7 @@ public class HalfPyramidNum {
             }
             System.out.println();
         }
+
         // Firsy way yo solve
 
         // for (int i = 1; i <= n; i++) {
