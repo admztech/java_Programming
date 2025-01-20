@@ -2,6 +2,8 @@ package Functions;
 
 import java.util.*;
 
+import javax.script.ScriptEngineManager;
+
 public class someOfDigits {
     public static int sumOfDigits(int n) {
         int sum = 0;
@@ -14,7 +16,10 @@ public class someOfDigits {
     }
 
     public static void main(String args[]) {
-        System.out.println(sumOfDigits(123456789));
+        Scanner scr = new Scanner(System.in);
+        System.out.println("Enter an Integer value");
+        int digits = scr.nextInt();
+        System.out.println("The sume of its digits is + " + sumOfDigits(digits));
 
     }
 }

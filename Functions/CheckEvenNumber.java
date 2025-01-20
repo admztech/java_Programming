@@ -11,7 +11,13 @@ public class CheckEvenNumber {
     }
 
     public static void main(String[] args) {
-        boolean isEven = isEven(0);
-        System.out.println(isEven);
+        Scanner scr = new Scanner(System.in);
+        System.out.println("Enter the number: ");
+        int num = scr.nextInt();
+        if (isEven(num)) {
+            System.out.println("Number is Even");
+        } else {
+            System.out.println("Number is Odd");
+        }
     }
 }

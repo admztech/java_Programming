@@ -4,7 +4,7 @@ import java.util.*;
 
 public class checkPalindromeNumber {
 
-    public static void isPalindromeNumber(int n) {
+    public static boolean isPalindromeNumber(int n) {
         int rev = 0;
         int number = n;
         while (n > 0) {
@@ -15,13 +15,23 @@ public class checkPalindromeNumber {
         System.out.println(rev);
         System.out.println(number);
         if (number == rev) {
-            System.out.println(number + " is a Palindrome Number");
-        } else {
-            System.out.println(number + " Not a Palindrome Number");
+            return true;
         }
+        return false;
     }
 
     public static void main(String args[]) {
-        isPalindromeNumber(123);
+        Scanner scr = new Scanner(System.in);
+        System.out.println("Enter the number");
+        int palindrome = scr.nextInt();
+        if (isPalindromeNumber(palindrome)) {
+
+            System.out.println("Number is a Palindrome number");
+
+        } else {
+            {
+                System.out.println("Number is not a Palindrome number");
+            }
+        }
     }
 }
