@@ -22,8 +22,8 @@ public class linearSearch {
 
     public static void main(String[] args) {
         int mumber[] = { 1, 2, 3, 4, 5, 6, 7, 10, 12, 15 };
-        String menu[] = { "dose", "chale", "bhature", "samosa" };
-        String order = "dose";
+        String menu[] = { "dose", "chole bhature", "samosa" };
+        String order = "chole";
         int index = linearSearch(menu, order);
         if (index == -1) {
             System.out.println("Not found");
