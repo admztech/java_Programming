@@ -4,10 +4,8 @@ import java.util.*;
 
 public class Fibonaci {
     public static int fibNum(int n) {
-        if (n == 0) {
-            return 0;
-        } else if (n == 1) {
-            return 1;
+        if (n == 0 || n == 1) {
+            return n;
         }
         int fibn1 = fibNum(n - 1);
         int fibn2 = fibNum(n - 2);
