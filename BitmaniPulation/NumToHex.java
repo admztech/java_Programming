@@ -7,18 +7,13 @@ public class NumToHex {
         if (n == 0) {
             return "0";
         }
+        char[] hexChar = "0123456789abcdef".toCharArray();
         StringBuilder res = new StringBuilder("");
-        while (n != 0) {
-            int dig = n % 16;
-            if (dig > 9) {
-                char ch = (char) ('a' + (dig - 10));
-                res.append(ch);
-            } else {
-                res.append(dig);
-            }
-            n = n / 16;
+        for(int i=0; i<8 && n!=0; i++){
+            int digit = n&15;
+            res.append(hexChar[digit]);
+            n = n>>4
         }
-        return res.reverse().toString();
 
     }
 
